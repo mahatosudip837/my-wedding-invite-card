@@ -1,0 +1,243 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+.header-section {
+  position: relative;
+  min-height: 100vh;
+  background: url(./image/slide\ 1.jpg);
+  background-size: cover;
+  background-position: center;
+  color: #ffffff;
+  z-index: 1;
+}
+.header-section::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.row {
+  min-height: 20vh;
+  width: 100%;
+  border-bottom: 1px solid rgb(224, 222, 222);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-shadow: 10px 10px 10px black;
+}
+.row h1 {
+  font-size: 1.5rem;
+  font-family: "Great Vibes", cursive;
+  letter-spacing: 5px;
+}
+.header-section .container {
+  min-height: 80vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.header-section .container h3 {
+  font-size: 2rem;
+  margin: 10px;
+  opacity: 0;
+  animation: fadeInTop 1s ease forwards;
+}
+.header-section .container h1 {
+  font-size: 4rem;
+  margin: 10px;
+  opacity: 0;
+  animation: fadeInTop 1s ease forwards;
+  animation-delay: 1s;
+  font-family: "Great Vibes", cursive;
+}
+.header-section .container p {
+  font-size: 1.5rem;
+  margin: 10px;
+  padding: 10px 20px;
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 30px;
+  opacity: 0;
+  animation: fadeInTop 1s ease forwards;
+  animation-delay: 2s;
+}
+@keyframes fadeInTop {
+  0% {
+    transform: translateY(-50%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* couple section  */
+.couple-section {
+  padding: 70px 0;
+  min-height: 100vh;
+}
+.couple-section .row h1 {
+  font-size: 3rem;
+}
+.couple-section .container {
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.couple-section .container .box {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0 20px 20px;
+  position: relative;
+  z-index: 1;
+}
+.couple-section .container .box::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+}
+.couple-section .container .box img {
+  max-height: 250px;
+  max-width: 250px;
+  border-radius: 50%;
+  border: 2px solid white;
+  margin-bottom: 10px;
+  transition: all 0.5s ease;
+  transform: translateX(250px);
+}
+.couple-section .container .box img:hover {
+  transform: translateX(0);
+}
+.couple-section .container .box1 {
+  background: url("./image/dada.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.couple-section .container .box2 {
+  background: url("./image/boudi.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.couple-section .container .box h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #ffff;
+  font-family: "Great Vibes", cursive;
+}
+.couple-section .container .box .address {
+  box-shadow: 10px 10px 10px 10px black;
+  padding: 20px 5px;
+  margin: 0 20px 5px 0;
+}
+.couple-section .container .box .address p {
+  font-size: 1.5rem;
+  color: #ffff;
+}
+/* celebrate section */
+.celebrate-section {
+  background-color: rgb(63, 245, 63);
+  min-height: 100vh;
+}
+.celebrate-section .row h1 {
+  font-size: 3rem;
+  color: #ffff;
+}
+.celebrate-section .container {
+  margin: 10px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  gap: 20px;
+}
+.celebrate-section .container .box {
+  background: rgb(255, 255, 255);
+  padding: 80px 80px;
+  position: relative;
+  text-align: center;
+}
+.celebrate-section .container .box::after {
+  content: "";
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  bottom: 15px;
+  left: 15px;
+  border: 2px solid rgb(63, 245, 63);
+}
+.celebrate-section .container .box h1 {
+  font-size: 1.7rem;
+  padding: 0 0 3px 0;
+  border-bottom: 2px solid rgb(155, 153, 153);
+  margin-bottom: 10px;
+}
+.celebrate-section .container .box .date {
+  color: rgb(63, 245, 63);
+  font-size: 1.4rem;
+  margin-bottom: 5px;
+}
+.celebrate-section .container .box p {
+  color: #555555;
+  font-size: 1.3rem;
+}
+.celebrate-section .container .box2 {
+  transform: translateY(50px);
+  transition: all 0.5s ease;
+}
+.celebrate-section .container .box2:hover {
+  transform: translateY(0);
+}
+/* family section  */
+.family-section {
+  min-height: 100vh;
+  background: rgb(223, 212, 212);
+}
+.family-section .container {
+  padding: 70px 0;
+}
+.family-section .container .row h1 {
+  font-size: 3rem;
+}
+.family-box {
+  margin: 10px 0 0 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.family {
+  background: #ffff;
+  padding: 20px;
+}
+.family img {
+  height: 250px;
+  width: 250px;
+}
+.family h1 {
+  color: rgb(63, 245, 63);
+  font-size: 1.5rem;
+}
+.family p {
+  font-size: 1.1rem;
+  color: #555555;
+}
+
+/* media quarry 606px */
