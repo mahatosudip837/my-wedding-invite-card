@@ -68,8 +68,14 @@
   border: 2px solid rgb(255, 255, 255);
   border-radius: 30px;
   opacity: 0;
+  cursor: pointer;
+  transition: all 0.5s ease;
   animation: fadeInTop 1s ease forwards;
   animation-delay: 2s;
+}
+.header-section .container p:hover{
+  background: rgb(84, 233, 84);
+  color: black;
 }
 @keyframes fadeInTop {
   0% {
@@ -230,6 +236,10 @@
 .family img {
   height: 250px;
   width: 250px;
+  transition: all 0.5s ease;
+}
+.family img:hover{
+  transform: scale(1.5);
 }
 .family h1 {
   color: rgb(63, 245, 63);
