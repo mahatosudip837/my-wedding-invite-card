@@ -4,7 +4,17 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Poppins', sans-serif;
+}
+a{
+  text-decoration: none;
+  color: white;
+}
+h3{
+  text-align: center;
+}
+html{
+  scroll-behavior: smooth;
 }
 .header-section {
   position: relative;
@@ -316,7 +326,7 @@
 }
 @media screen and (max-width:376px){
   .celebrate-section .row h1 {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     color: #ffff;
   }
   .celebrate-section .container .box {
